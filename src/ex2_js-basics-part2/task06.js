@@ -14,4 +14,4 @@ function isPrime(n) {
   return `${n} простое число`;
 }
 
-module.exports = isPrime;
+module.exports = isPrime;//

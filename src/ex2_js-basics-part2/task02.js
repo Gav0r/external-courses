@@ -8,4 +8,4 @@ function printArray(array) {
   console.log(array.length);
 }
 
-module.exports = printArray;
+module.exports = printArray;//

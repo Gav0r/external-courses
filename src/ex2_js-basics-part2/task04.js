@@ -11,4 +11,4 @@ function checkEqualElements(array) {
   return true;
 }
 
-module.exports = checkEqualElements;
+module.exports = checkEqualElements;//

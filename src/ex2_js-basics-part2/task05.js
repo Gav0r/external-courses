@@ -12,4 +12,4 @@ function findMaxValue(array) {
   return max;
 }
 
-module.exports = findMaxValue;
+module.exports = findMaxValue;//
