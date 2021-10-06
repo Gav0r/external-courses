@@ -16,4 +16,4 @@ function calcEvenOddZero(array) {
   }
   return counter;
 }
-module.exports = calcEvenOddZero;//
+module.exports = calcEvenOddZero;

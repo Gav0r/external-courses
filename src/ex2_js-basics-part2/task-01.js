@@ -18,4 +18,4 @@ for (let i = 0; i < values.length; i++) {
   getValueType(values[i]);
 }
 
-module.exports = getValueType; //
+module.exports = getValueType;
