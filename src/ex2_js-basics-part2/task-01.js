@@ -3,10 +3,10 @@ function getValueType(value) {
     return undefined;
   }
   if (typeof value === 'number') {
-    return Number;
+    return 'number';
   }
   if (typeof value === 'string') {
-    return String;
+    return 'string';
   }
   return undefined;
 }
