@@ -9,7 +9,6 @@ function checkExistKey(key, obj) {
     return obj;
   }
 
-  // const newObj = Object.assign({}, obj);
   const newObj = { ...obj };
   newObj[key] = 'new';
   return newObj;

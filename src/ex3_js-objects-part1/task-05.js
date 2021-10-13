@@ -6,6 +6,4 @@ function createObjClone(obj) {
   return (Object.assign({}, ...obj));
 }
 
-(createObjClone(obj1));
-
-module.exports(createObjClone);
+module.exports(createObjClone(obj1));
