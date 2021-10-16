@@ -13,7 +13,7 @@ function getValueType(value) {
 
 const values = ['simple', 22, false, undefined, parseInt('simple', 10)];
 
-// eslint-disable-next-line no-plusplus
+/* eslint-disable-next-line no-plusplus */
 for (let i = 0; i < values.length; i++) {
   getValueType(values[i]);
 }
