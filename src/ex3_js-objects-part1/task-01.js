@@ -1,4 +1,6 @@
 const a = {};
+
 a.age = 22;
 a.apples = 'qqqq';
-delete a.age;//
+
+delete a.age;
