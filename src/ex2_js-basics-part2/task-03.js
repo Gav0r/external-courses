@@ -1,4 +1,3 @@
-// const arr = [1, 2, 3, 4, null, 5, 6, '*', 0];
 function calcEvenOddZero(array) {
   const counter = [0, 0, 0];
   // eslint-disable-next-line no-plusplus
@@ -16,4 +15,4 @@ function calcEvenOddZero(array) {
   }
   return counter;
 }
-module.exports = calcEvenOddZero;//
+module.exports = calcEvenOddZero;
