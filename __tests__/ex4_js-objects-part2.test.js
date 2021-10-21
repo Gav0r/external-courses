@@ -49,7 +49,7 @@ describe('Ex4. JS Objects Part 2', () => {
             it('should camelize input string', () => {
                 expect(code('I am cool')).toBe('I Am Cool');
                 expect(code('I Am cool')).toBe('I Am Cool');
-                expect(code('I aM cool')).toBe('I AM Cool');
+                expect(code('I aM cool')).toBe('I Am Cool');
             }),
         );
 
