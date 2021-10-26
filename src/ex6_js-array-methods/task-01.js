@@ -9,6 +9,7 @@ function analogSlice(arr, begin, end) {
   ) {
     if (typeof end === 'number' && !Number.isNaN(end)) {
       const copyArr = [];
+
       if (begin >= 0 && end > begin) {
         for (let i = begin; i < end; i += 1) {
           if (i === arr.length) break;
@@ -31,9 +32,11 @@ function analogSlice(arr, begin, end) {
           copyArr.push(arr[i]);
         }
       }
+
       return copyArr;
     }
     const copyArr = [];
+
     if (begin >= 0) {
       for (let i = begin; i < arr.length && i >= 0; i += 1) {
         copyArr.push(arr[i]);
@@ -43,8 +46,10 @@ function analogSlice(arr, begin, end) {
         copyArr.push(arr[i]);
       }
     }
+
     return copyArr;
   }
+
   return [...arr];
 }
 
