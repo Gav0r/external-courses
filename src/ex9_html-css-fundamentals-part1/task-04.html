@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task-04</title>
+  <style>
+    .box1{
+      margin: 10px;
+      width: 150px;
+      height: 150px;
+      background: rgb(8, 235, 45);
+      position: absolute;
+    }
+    .box1:before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgb(25, 175, 50);
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: -2;
+    }
+    .box1:after{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgb(17, 209, 49);
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: -1;
+    }
+    .box2 {
+      margin: 10px 250px;
+      position: absolute;
+			width: 150px;
+			height: 150px;
+			background-color:rgb(8, 235, 45);
+			box-shadow: 10px 10px 0 0 rgb(17, 209, 49), 20px 20px 0 0 rgb(25, 175, 50);
+		} 
+    .box3_1 {
+      margin: 10px 450px;
+      position: absolute;
+      width: 150px;
+			height: 150px;
+			background-color:rgb(8, 235, 45);
+    }
+    .box3_2 {
+      margin: 20px 460px;
+      position: absolute;
+      width: 150px;
+			height: 150px;
+			background-color:rgb(17, 209, 49);
+    }
+    .box3_3 {
+      margin: 30px 470px;
+      position: absolute;
+      width: 150px;
+			height: 150px;
+			background-color:rgb(25, 175, 50);
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3_3"></div>
+  <div class="box3_2"></div>
+  <div class="box3_1"></div>
+
+
+</body>
+</html>
