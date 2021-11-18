@@ -1,0 +1,25 @@
+
+.round, .round div {
+  border-radius: 50%;
+}
+
+.diamond, .diamond div {
+  margin: 0 30px;
+  transform-origin: 75% 50%;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+.diamond {
+  transform: rotate(45deg) translateY(0px);
+}
+.diamond .diamond1 {
+  width: 455px;
+  height: 455px;
+  transform: rotate(-45deg) translateY(-85px);
+}
+.diamond .diamond1 img {
+  width: 100%;
+  height: auto;
+  
+}
