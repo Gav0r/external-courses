@@ -1,0 +1,16 @@
+#darkColor {
+  background-color: rgb(226,229,233);
+}
+
+tbody #darkColor:hover {
+  background: #f3bd48;
+  color: #fff;
+}
+
+.greenBackground:hover {
+  background-color: rgb(5, 158, 51);
+}
+
+.redBackground:hover {
+  background-color: rgb(148, 16, 16);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task-02</title>
+  <link rel="stylesheet" href="task-02.css" type="text/css">
+</head>
+<body>
+  <form action="http://httpbin.org/get">
+    <fieldset>
+      <legend>Personal data</legend>
+      <p>
+        <label for="surname">Surname</label>
+        <input type="text" name="surname" id="surname">
+      </p>
+      <p>
+        <label for="firstName">First name</label>
+        <input type="text" name="firstName" id="firstName">
+      </p>
+      <p>
+        <label for="middleName">Middle Name</label>
+        <input type="text" name="middleName" id="middleName">
+      </p>
+      <p>
+        <div class="form_radio">
+          You are
+          <input id="radio-1" type="radio" name="radio" value="1">
+          <label for="radio-1">male</label>
+          <input id="radio-1" type="radio" name="radio" value="1">
+          <label for="radio-1">female</label>
+        </div>
+      </p>
+      <p>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="101">
+      </p>
+      <p>
+        <label for="countryRes">Country of Residence</label>
+        <select name="countryRes" id="countryRes">
+          <option value="Russia">Russia</option>
+          <option value="Ukraine">Ukraine</option>
+          <option value="other">other</option>
+        </select>
+      </p>
+      <p>
+        <label for="cityRyazan">City</label>
+        <input type="checkbox" name="cityRyazan" id="cityRyazan"> Ryazan <input type="checkbox" name="cityMsk" > Moskow
+      </p>
+      <p>
+        Photography <input type="file" name="filePhoto" >
+      </p>
+      <hr>
+      <p>
+        <label for="title">Title</label>
+        <select name="title" multiple size="8" id="title">
+          <optgroup label="Technologies">
+            <option value="webMaster">Web master</option>
+            <option value="dataA">Database Administration</option>
+            <option value="cAd">Computer-aided design</option>
+          </optgroup>
+          <optgroup label="Finance">
+            <option value="ecPlan">Economic Planning</option>
+            <option value="managAcc">Management accounting</option>
+            <option value="budgAndPlan">Budgeting and planning</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label for="range">Salary</label>
+        <input type="range" name="range" id="range">
+      </p>
+      <p>
+        <textarea name="sometext"  cols="30" rows="10" placeholder="Tell us about yourself..."></textarea>
+      </p>
+    </fieldset>
+    <fieldset>
+    <legend>Contact information</legend>
+      <p>
+        <label for="site">Site</label>
+        <input type="url" name="site" id="site">
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" name="Email" id="email">
+      </p>
+      <p>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone">
+      </p>
+    </fieldset>
+    <p>
+      Password <input type="password" name="tracking-code" required>
+    </p>
+  <button formaction="http://httpbin.org/get" formmethod="get" formenctype="multipart/form-data">Отправить</button>
+  <button type="reset" name="reset" value="Сбросить">Сбросить</button>
+  <button formaction="http://httpbin.org/post" formmethod="post" formenctype="multipart/form-data">Отправить</button>
+</form>
+</body>
+</html>
