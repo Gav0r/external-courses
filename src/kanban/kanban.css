@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./fonts/Roboto-Medium.ttf);
+  font-weight: 400;
+}
+
+.header {
+  background-color:#0067A3;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  align-items: center;
+  width: 100wv;
+  padding: 5px 14px;
+}
+
+.main {
+  background: #0079BF;
+  height: calc(100vh - 106px);
+}
+
+.footer {
+  display: flex;
+  grid-template-columns: max-content max-content 1fr;
+  grid-gap: 36px;
+  background-color:#0067A3;
+  color: #fff;
+  padding: 17px 26px;
+  white-space: nowrap;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 200;
+  margin-left: 8px;
+  line-height: 32px;  
+}
+
+.header__list-avatar {
+  display: flex;
+  grid-gap: 49px;
+  justify-content: right;
+  align-items: center;
+}
+
+.header__list-button {
+  height: 33px;
+  display: flex;
+  grid-gap: 13px;
+  align-items: center;
+  padding: 5px 9px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.header__avatar-container {
+  display: flex;
+  grid-gap: 6px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.hamburger-menu {
+  display: flex;
+  grid-gap: 3px;
+  max-width: 45px;
+  max-height: 45px;
+  flex-direction: column;
+  padding: 8px 7px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  position: relative;
+  width: 30px;
+  height: 7px;
+}
+
+.hamburger-menu span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border: 1.5px solid #fff;
+  border-radius: 42.5%;
+}
+
+.hamburger-menu span::after {
+  content: '';
+  position: absolute;
+  top: 2.3px;
+  right: 0;
+  width: 20px;
+  height: 1.5px;
+  background-color: #fff;
+}
+
+.kanban-board-date {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
