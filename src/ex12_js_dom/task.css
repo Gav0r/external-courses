@@ -1,0 +1,129 @@
+#slider {
+  position: relative;
+  text-align: center;
+  top: 10px;
+}
+
+#slider{
+margin: 0 auto;
+}
+
+#slides article{
+width: 20%;
+float: left;
+}
+
+#slides .image{
+width: 500%;
+line-height: 0;
+}
+
+#overflow{
+width: 100%;
+overflow: hidden;
+}
+
+article img{
+width: 100%;
+}
+
+#main:checked ~ #slider{
+max-width: 960px;
+}
+
+#switch1:checked ~ #controls label:nth-child(4), 
+#switch2:checked ~ #controls label:nth-child(1),
+#switch3:checked ~ #controls label:nth-child(2),
+#switch4:checked ~ #controls label:nth-child(3){
+background: url('asset/prev.png') no-repeat;
+float: left;
+margin: 0 0 0 -84px;
+display: block;
+height: 67px;
+width: 67px;
+border-radius: 50%;
+outline: 3px solid rgb(216, 214, 214);
+}
+
+#switch1:checked ~ #controls label:nth-child(2), 
+#switch2:checked ~ #controls label:nth-child(3),
+#switch3:checked ~ #controls label:nth-child(4),
+#switch4:checked ~ #controls label:nth-child(1){
+background: url('asset/next.png') no-repeat;
+float: right;
+margin: 0 -84px 0 0;
+display: block;
+height: 67px;
+width: 67px;
+border-radius: 50%;
+outline: 3px solid rgb(216, 214, 214);
+}
+
+label, a{
+cursor: pointer;
+}
+
+.all input{
+display: none;
+}
+
+#switch1:checked ~ #slides .image{
+margin-left: 0;
+}
+
+#switch2:checked ~ #slides .image{
+margin-left: -100%;
+}
+
+#switch3:checked ~ #slides .image{
+margin-left: -200%;
+}
+
+#switch4:checked ~ #slides .image{
+margin-left: -300%;
+}
+
+
+#controls{
+margin: -25% 0 0 0;
+width: 100%;
+height: 50px;
+}
+
+#active label{
+border-radius: 10px;
+display: inline-block;
+width: 15px;
+height: 15px;
+background: #bbb;
+}
+
+#active{
+margin: 23% 0 0;
+text-align: center;
+}
+
+#active label:hover{
+background: #33cc1f;
+border-color: #777 !important;
+}
+
+#switch1:checked ~ #active label:nth-child(1),
+#switch2:checked ~ #active label:nth-child(2),
+#switch3:checked ~ #active label:nth-child(3),
+#switch4:checked ~ #active label:nth-child(4){
+background: #33cc1f;
+border-color: #33cc1f !important;
+}
+
+#slides .image{
+transition: all 0.5s ease-in;
+}
+
+#controls label:hover{
+opacity: 0.5;
+}
+
+#controls label{
+transition: opacity 0.2s ease-out;
+}
