@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kanban</title>
-  <link rel="stylesheet" href="kanban.css" type="text/css">
+  <link rel="stylesheet" href="styles/header.css" type="text/css">
+  <link rel="stylesheet" href="styles/main.css" type="text/css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
   <header class="header">
@@ -33,13 +35,55 @@
     </div>
   </header>
   <main class="main">
-
+    <div class="scroll-container">
+      <div>
+        <div class="kanban-column backlog-container">
+          <div>
+            <h3 class="title">Backlog</h3>
+            <span></span>
+          </div>
+          <div class="tasks-list">
+          </div>
+          <button class="add-card-button"><span class="plus">+</span>&nbsp;Add card</button>
+        </div>
+    </div>
+      <div>
+        <div class="kanban-column ready-container">
+          <div>
+            <h3 class="title">Ready</h3>
+            <span></span>
+          </div>
+          <div class="tasks-list"></div>
+          <button class="add-card-button" disabled><span class="plus">+</span>&nbsp;Add card</button>
+        </div>
+      </div>
+      <div>
+        <div class="kanban-column in-progress-container">
+          <div>
+            <h3 class="title">In Progress</h3>
+            <span></span>
+          </div>
+          <div class="tasks-list"></div>
+          <button class="add-card-button" disabled><span class="plus">+</span>&nbsp;Add card</button>
+        </div>
+      </div>
+      <div>
+        <div class="kanban-column finished-container">
+          <div>
+            <h3 class="title">Finished</h3>
+            <span></span>
+          </div>
+          <div class="tasks-list"></div>
+          <button class="add-card-button" disabled><span class="plus">+</span>&nbsp;Add card</button>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <div>
       Active tasks:&nbsp;
       <span>
-        &lt;Kanban&gt;
+        &lt;ex-13&gt;
       </span>
     </div>
     <div>
@@ -59,6 +103,7 @@
     </div>
   </footer>
 
-  <script src="kanban.js"></script>
+  <script src="scripts/header.js"></script>
+  <script src="scripts/boards.js"></script>
 </body>
 </html>

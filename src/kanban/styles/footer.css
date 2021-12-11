@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  grid-template-columns: max-content max-content 1fr;
+  grid-gap: 36px;
+  background-color:#0067A3;
+  color: #fff;
+  padding: 17px 26px;
+  white-space: nowrap;
+}

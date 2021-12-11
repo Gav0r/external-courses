@@ -1,0 +1,85 @@
+.main {
+  background: #0079BF;
+  min-height: calc(100vh - 106px);
+}
+
+.scroll-container {
+  /* display: flex; */
+  /* flex-direction: row; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 282px);
+  grid-gap: 24px;
+  padding: 20px;
+  overflow-x: scroll;
+  max-width: 100vw; 
+  height: calc(100vh - 146px);
+  white-space: nowrap;
+}
+
+.kanban-column {
+  background: #EBECF0;
+  border-radius: 10px;
+  width: 258px;
+  padding: 12px;
+  min-width: max-content;
+}
+
+.kanban-column .title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanban-column .add-card-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  font-size: 18px;
+  line-height: 21px;
+  color: #5E6C84;
+  background: none;
+  cursor: pointer;
+}
+
+.kanban-column .add-card-button:enabled:hover {
+  color: #272d36;
+}
+
+.kanban-column .add-card-button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.kanban-column .add-card-button .plus {
+  font-size: 25px;
+}
+
+.kanban-column .tasks-list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  margin: 15px 0;
+  max-width: 258px;
+}
+
+.tasks-list .tasks-dropdown {
+  padding: 9px 5px;
+  border: #EBECF0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks-list .new-task-input {
+  padding: 9px 5px;
+  border: #EBECF0;
+  border-radius: 5px;
+}
+
+.tasks-list .task {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 7px 8px;
+  font-size: 18px;
+  line-height: 21px;
+}
