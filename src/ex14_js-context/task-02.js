@@ -27,6 +27,7 @@ class Hangman {
         for (let i = 0; i < indices.length; i += 1) {
           letterArr[indices[i]] = letter;
         }
+
         this.#guessedLetters = letterArr.join('');
       } else {
         this.#counter -= 1;
@@ -36,6 +37,7 @@ class Hangman {
         return `wrong letter, errros left ${this.#counter} | ${this.#wrongLetters.join()}`;
       }
     }
+
     return this;
   }
 
