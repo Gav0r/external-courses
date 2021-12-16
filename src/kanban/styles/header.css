@@ -1,34 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: Roboto;
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Light.ttf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Medium.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto-Bold.ttf);
-  font-weight: 900;
-}
-
 .header {
   background-color:#0067A3;
   display: grid;
@@ -63,6 +32,9 @@
   background-color: #fff;
   border-radius: 5px;
   border: none;
+}
+
+.header__list-button:enabled {
   cursor: pointer;
 }
 
@@ -71,6 +43,7 @@
   grid-gap: 6px;
   align-items: center;
   cursor: pointer;
+  user-select: none;
 }
 
 .header__avatar {
@@ -131,8 +104,6 @@
   background: #0067A3;
   display: flex;
   flex-direction: column;
-  /* pointer-events: none;
-  visibility: hidden; */
   pointer-events: initial;
   visibility: visible;
   position: absolute;
@@ -143,16 +114,8 @@
   z-index: 1;
 }
 
-/* .dropdown-menu.active {
-  pointer-events: initial;
-  visibility: visible;
-} */
-
 .header__arrow.active {
   transition: .3s;
-}
-
-.header__arrow.active {
   transform: rotate(180deg);
 }
 
