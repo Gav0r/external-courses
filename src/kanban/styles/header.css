@@ -1,0 +1,153 @@
+.header {
+  background-color:#0067A3;
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  align-items: center;
+  width: 100wv;
+  padding: 5px 14px;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 200;
+  margin-left: 8px;
+  line-height: 32px;  
+}
+
+.header__list-avatar {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 49px;
+  justify-content: right;
+  align-items: center;
+}
+
+.header__list-button {
+  height: 33px;
+  display: flex;
+  grid-gap: 13px;
+  align-items: center;
+  padding: 5px 9px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+}
+
+.header__list-button:enabled {
+  cursor: pointer;
+}
+
+.header__avatar-container {
+  display: flex;
+  grid-gap: 6px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header__avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.hamburger-menu {
+  display: flex;
+  grid-gap: 3px;
+  max-width: 45px;
+  max-height: 45px;
+  flex-direction: column;
+  padding: 8px 7px;
+  cursor: pointer;
+}
+
+.hamburger-menu span {
+  position: relative;
+  width: 30px;
+  height: 7px;
+}
+
+.hamburger-menu span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border: 1.5px solid #fff;
+  border-radius: 42.5%;
+}
+
+.hamburger-menu span::after {
+  content: '';
+  position: absolute;
+  top: 2.3px;
+  right: 0;
+  width: 20px;
+  height: 1.5px;
+  background-color: #fff;
+}
+
+.kanban-board-date {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+
+.header__list-avatar {
+  position: relative;
+}
+
+.dropdown-menu {
+  min-width: 247px;
+  background: #0067A3;
+  display: flex;
+  flex-direction: column;
+  pointer-events: initial;
+  visibility: visible;
+  position: absolute;
+  cursor: default;
+  top: 50px;
+  right: 0;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+}
+
+.header__arrow.active {
+  transition: .3s;
+  transform: rotate(180deg);
+}
+
+.dropdown-menu-link {
+  user-select: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 10px 10px 10px;
+}
+
+.dropdown-menu-link:first-child {
+  padding-top: 10px;
+}
+
+.dropdown-menu-link:hover {
+  background-color: #0a8bdb;
+  transition: 0.3s;
+}
+
+.logout-button {
+  border: none;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 10px 10px 10px;
+  user-select: none;
+}
+
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.678);
+  transition: .3s;
+}
